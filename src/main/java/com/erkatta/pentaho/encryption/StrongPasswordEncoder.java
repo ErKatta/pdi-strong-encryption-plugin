@@ -44,13 +44,13 @@ import com.erkatta.pentaho.encryption.util.RsaCryptoUtil;
 public class StrongPasswordEncoder implements TwoWayPasswordEncoderInterface {
 
 	/** The name of the system property that carries the public key file name. **/
-	private static final String PUBLIC_KEY_FILENAME_KEY = "KETTLE_STRONG_PASSWORD_ENCORED_PUBKEY_FILENAME";
+	private static final String PUBLIC_KEY_FILENAME_KEY = "KETTLE_STRONG_PASSWORD_ENCODED_PUBKEY_FILENAME";
 	/** The name of the system property that carries the private key file name. **/
-	private static final String PRIVATE_KEY_FILENAME_KEY = "KETTLE_STRONG_PASSWORD_ENCORED_PRIVKEY_FILENAME";
+	private static final String PRIVATE_KEY_FILENAME_KEY = "KETTLE_STRONG_PASSWORD_ENCODED_PRIVKEY_FILENAME";
 	/** The name of the system property that carries the public key file path. **/
-	private static final String PUBLIC_KEY_PATH_KEY = "KETTLE_STRONG_PASSWORD_ENCORED_PUBKEY_PATH";
+	private static final String PUBLIC_KEY_PATH_KEY = "KETTLE_STRONG_PASSWORD_ENCODED_PUBKEY_PATH";
 	/** The name of the system property that carries the private key file path. **/
-	private static final String PRIVATE_KEY_PATH_KEY = "KETTLE_STRONG_PASSWORD_ENCORED_PRIVKEY_PATH";
+	private static final String PRIVATE_KEY_PATH_KEY = "KETTLE_STRONG_PASSWORD_ENCODED_PRIVKEY_PATH";
 
 	/** The default public key file name. **/
 	private static final String PUBLIC_KEY_FILENAME_DEFAUT = "public.key";
