@@ -1,6 +1,8 @@
 # Strong Password Encoder
 Kettle plugin that provides support for a stronger password encryption based on the RSA (Rivest–Shamir–Adleman) algorithm and that can be extended to use other asymmetric encryption algorithms.
 
+![](https://github.com/ErKatta/pdi-strong-encryption-plugin/workflows/Strong%20Password%20Encoder/badge.svg)
+
 Building
 --------
 It's a maven build, so `mvn clean package` is a typical default for a local build.
