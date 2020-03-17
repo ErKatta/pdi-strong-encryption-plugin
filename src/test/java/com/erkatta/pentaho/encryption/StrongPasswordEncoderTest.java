@@ -62,7 +62,7 @@ public class StrongPasswordEncoderTest {
 	 **/
 	@ClassRule
 	public static final ProvideSystemProperty properties = new ProvideSystemProperty(
-			"KETTLE_STRONG_PASSWORD_ENCODED_PUBKEY_PATH", "/tmp/").and("KETTLE_STRONG_PASSWORD_ENCODED_PRIVKEY_PATH",
+			"KETTLE_STRONG_PASSWORD_ENCODER_PUBKEY_PATH", "/tmp/").and("KETTLE_STRONG_PASSWORD_ENCODER_PRIVKEY_PATH",
 					"/tmp/");
 
 	/**
