@@ -24,8 +24,9 @@ Place the `pdi-strong-encryption-plugin-1.0.0.jar` in the plugins folder of your
 | ------------- | ---------------- | --------------------- |
 | KETTLE_PASSWORD_ENCODER_PLUGIN=SPE | YES | |
 | KETTLE_STRONG_PASSWORD_ENCODER_PUBKEY_PATH=/path_to_the_public_key_folder/ | NO | ./ |
-| KETTLE_STRONG_PASSWORD_ENCODER_PRIVKEY_PATH=/path_to_the_private_key_folder/ | NO | ./ | KETTLE_STRONG_PASSWORD_ENCODER_PUBKEY_FILENAME=public_key_filename  | NO | public.key |
-KETTLE_STRONG_PASSWORD_ENCODER_PRIVKEY_FILENAME=private_key_filename  | NO | private.key |
+| KETTLE_STRONG_PASSWORD_ENCODER_PRIVKEY_PATH=/path_to_the_private_key_folder/ | NO | ./ |
+| KETTLE_STRONG_PASSWORD_ENCODER_PUBKEY_FILENAME=public_key_filename  | NO | public.key |
+| KETTLE_STRONG_PASSWORD_ENCODER_PRIVKEY_FILENAME=private_key_filename  | NO | private.key |
 
 #### Password encryption
 Generation of encrypted password can be performed using the encr.sh script present in the Penthao Data Integration installation folder just adding the following lines at the top:
