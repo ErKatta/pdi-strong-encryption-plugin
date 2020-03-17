@@ -7,8 +7,7 @@ Building
 --------
 It's a maven build, so `mvn clean package` is a typical default for a local build.
 
-Pre-requisites
----------------
+####  Pre-requisites
 JDK 8 in your path.
 Maven 3.3.9 in your path.
 
@@ -20,7 +19,7 @@ It will generate two files (public.key and private.key) in the current directory
 Usage
 -----
 #### Configuration
-Place the `pdi-strong-encryption-plugin-1.0.0.jar` in the plugins folder of your Penthao Data Integration installation (i.e. /data-integration/plugins) and then set the following parameters in your kettle.properties file:
+Place the `pdi-strong-encryption-plugin-1.0.0.jar` in the plugins folder of your Hitachi Vantara Penthao Data Integration installation (i.e. /data-integration/plugins) and then set the following parameters in your kettle.properties file:
 
 | Property | Mandatory | Default value |
 | ------------- | ---------------- | --------------------- |
@@ -31,7 +30,7 @@ Place the `pdi-strong-encryption-plugin-1.0.0.jar` in the plugins folder of your
 | KETTLE_STRONG_PASSWORD_ENCODER_PRIVKEY_FILENAME=private_key_filename  | NO | private.key |
 
 #### Password encryption
-Generation of encrypted password can be performed using the encr.sh script present in the Penthao Data Integration installation folder just adding the following lines at the top:
+Generation of encrypted password can be performed using the encr.sh script present in the Hitachi Vantara Penthao Data Integration installation folder just adding the following lines at the top:
 ```
 PENTAHO_DI_JAVA_OPTIONS="-DKETTLE_PASSWORD_ENCODER_PLUGIN=SPE [Other properties listed above prefixed with -D]"
 export PENTAHO_DI_JAVA_OPTIONS
@@ -40,6 +39,11 @@ Once you've added those line simply execute `./encr.sh -kettle yourpassword`
 The resulting encrypted password will be prefixed by "SPEncrypted". The whole string (prefix + encrypted password) must be used as encrypted password.
 
 Note that this plugin support decoding of both RSA and `KettleTwoWayPasswordEncoder` (using the Encrypted prefix) encrypted password in the same kettle.properties file.
+
+Compatibility
+--------------
+This plugin has been tested to work with Hitachi Vantara Pentaho Data Integration 7.1.x and 8.0.x.
+If you are going to trying it in another version, please let me know the results.
 
 License
 -------
