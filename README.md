@@ -30,10 +30,10 @@ Place the `pdi-strong-encryption-plugin-1.0.0.jar` in the plugins folder of your
 
 #### Password encryption
 Generation of encrypted password can be performed using the encr.sh script present in the Penthao Data Integration installation folder just adding the following lines at the top:
->
+```
 PENTAHO_DI_JAVA_OPTIONS="-DKETTLE_PASSWORD_ENCODER_PLUGIN=SPE [Other properties listed above prefixed with -D]"
 export PENTAHO_DI_JAVA_OPTIONS
-
+```
 Once you've added those line simply execute `./encr.sh -kettle yourpassword`
 The resulting encrypted password will be prefixed by "SPEncrypted". The whole string (prefix + encrypted password) must be used as encrypted password.
 
