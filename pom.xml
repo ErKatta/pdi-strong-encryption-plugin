@@ -14,7 +14,7 @@
 		<pdi.version>8.0.0.5-303</pdi.version>
 		<license.licenseName>lgpl_v2_1</license.licenseName>
 		<license.projectName>PDI Strong Encryption Plugin</license.projectName>
-		<junit.version>4.13</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<assertj.version>3.15.0</assertj.version>
 		<system-rules.version>1.19.0</system-rules.version>
 	</properties>
